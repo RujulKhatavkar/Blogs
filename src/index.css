@@ -1,0 +1,129 @@
+body {
+  margin: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.card-container {
+  display: grid;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin:01%;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.card {
+ /* width: 190px;
+ height: 254px; */
+ border-radius: 20px;
+ background: #B4E4FF;
+ position: relative;
+ padding: 1.8rem;
+ border: 2px solid #95BDFF;
+ transition: 0.5s ease-out;
+ overflow: visible;
+ margin: 5%;
+}
+.text-body {
+ color: rgb(134, 134, 134);
+ font-size: 0.7rem;
+}
+
+.text-title {
+ font-size: 1rem;
+ font-weight: bold;
+}
+
+/*Hover*/
+.card:hover {
+ border-color: #008bf8;
+ box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card:hover .card-button {
+ transform: translate(-50%, 50%);
+ opacity: 1;
+}
+.card-button {
+ transform: translate(-50%, 125%);
+ width: 60%;
+ border-radius: 1rem;
+ border: none;
+ background-color: #008bf8;
+ color: #fff;
+ font-size: 1rem;
+ padding: .5rem 1rem;
+ position: absolute;
+ left: 50%;
+ bottom: 0;
+ opacity: 0;
+ transition: 0.3s ease-out;
+}
+.custom-heading{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.custom-subheading{
+  font-size: 1rem;
+  font-weight: bold;
+}
+form{
+  position: relative;
+padding: 15px 0 0;
+margin-top: 10px;
+width: 40%;
+}
+input{
+font-family: inherit;
+  width: 100%;
+  border-width:0;
+  border-bottom-color: #008bf8;
+  border-bottom-width: 2px;
+  outline: 0;
+  font-size: 0.8rem;
+  color: $white;
+  padding: 4px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+  margin: 1%
+}
+textarea{
+
+  width: 100%;
+  border-width:0;
+  border-bottom-color: #008bf8;
+  border-bottom-width: 2px;
+  outline: 0;
+  font-size: 1.3rem;
+  color: $white;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+  margin: 0.4%;
+}
+.container1{
+  width: 40%;
+  text-align: right;
+
+}
+.custom{
+  margin-left: 37px;
+}
+.btn{
+  background-color: #008bf8;
+  margin-top: 5px;
+  border-radius: 0.8rem;
+  width:150px;
+   color: #fff;
+}
+.btn:hover {
+  background-color: #B9F3E4; /* Set the desired background color on hover */
+}
